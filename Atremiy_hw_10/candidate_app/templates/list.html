@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Кандидаты</title>
+</head>
+<body bgcolor="#20B2AA">
+    <h1>Candidate_app </h1>
+    <center><h2>Все кандидаты </h2></center><br>
+    {% for candidate in candidates %}:
+        <center><a href='candidates/{{candidate.id}}'> {{candidate.name}} </a><br></center>
+    {% endfor %}
+
+</body>
+
+</html>
+

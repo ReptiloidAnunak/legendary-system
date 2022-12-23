@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Кандидаты</title>
+</head>
+
+<body bgcolor="#20B2AA">
+<h2>Найдено кандидатов: {{candidates | length}}</h2>
+{% for candidate in candidates %}:
+    <a href='/candidates/{{candidate.id}}'> {{candidate.name}} </a><br>
+{% endfor %}
+<center><p><a href='/'> Перейти<br>на Главную страницу </a></p></center>
+</body>
+</html>

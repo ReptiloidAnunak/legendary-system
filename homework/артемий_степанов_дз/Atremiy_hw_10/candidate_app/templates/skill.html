@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#20B2AA">
+<h1>Найдено со скиллом {{skill_name}}: {{candidates | length}}</h1>
+{% for candidate in candidates %}:
+    <a href='/candidates/{{candidate.id}}'> {{candidate.name}} </a><br>
+{% endfor %}
+<center><p><a href='/'> Перейти<br>на Главную страницу </a></p></center>
+</body>
+</html>
